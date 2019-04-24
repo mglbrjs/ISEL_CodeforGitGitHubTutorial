@@ -8,13 +8,14 @@
 ## Data prep using preloaded "trees" dataset in R.  As a clean dataset, there really isn't much prep other than loading in the dataset and checking out its structure.
 
 # Load it in
-data(trees) #Trees are green
+data(trees)
 
 # Preliminary inspection: format, structure, dimensions
 head(trees)
 str(trees)
 dim(trees)
 colnames(trees)
+x<-trees[1,]
 
 # Little tree ecology for us marine folks: tree height and girth are commonly measured, while measuring tree volume is more difficult and less appealing as it requires either cutting down the tree, or climing all over it and taking a lot of precise measurements. Ideally, we'd like to be able to build a model that relates height and girth to tree volume.  
 
@@ -111,6 +112,3 @@ plot_ly(data = pred.grid, z = ~Pred.Volume, x = ~Girth, y = ~Height, opacity = 0
 plot_ly(data = pred.grid, z = ~Pred.Volume, x = ~Girth, y = ~Height, opacity = 0.5) %>%
   add_markers(marker = list(size = 2), name = "predicted") %>%
   add_markers(data = trees, z = ~Volume, x = ~Girth, y = ~Height, marker = list(color = "green", size = 4), name = "Observed changed color")
-
-
-### Andrew did this11!!
