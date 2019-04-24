@@ -8,7 +8,7 @@
 ## Data prep using preloaded "trees" dataset in R.  As a clean dataset, there really isn't much prep other than loading in the dataset and checking out its structure.
 
 # Load it in
-data(trees)
+data(trees) #Trees are green
 
 # Preliminary inspection: format, structure, dimensions
 head(trees)
