@@ -15,7 +15,7 @@ head(trees)
 str(trees)
 dim(trees)
 colnames(trees)
-k<-trees[1,]
+h<-trees[1,]
 
 # Little tree ecology for us marine folks: tree height and girth are commonly measured, while measuring tree volume is more difficult and less appealing as it requires either cutting down the tree, or climing all over it and taking a lot of precise measurements. Ideally, we'd like to be able to build a model that relates height and girth to tree volume.  
 
