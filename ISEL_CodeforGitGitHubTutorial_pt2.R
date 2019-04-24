@@ -4,7 +4,7 @@
 ## You, working by yourself
 #####
 # Data prep and exploration -----------------------------------------------
-4qe
+
 ## Data prep using preloaded "trees" dataset in R.  As a clean dataset, there really isn't much prep other than loading in the dataset and checking out its structure.
 
 # Load it in
