@@ -121,3 +121,6 @@ summary(girth.height.int.mod)
 mod.comp<- data.frame("Model" = c("Girth", "Girth+Height", "Girth+Height+Int"), bind_rows(glance(girth.mod), glance(girth.height.mod), glance(girth.height.int.mod)))
 mod.comp
 
+# Someone else's notes -- looks great
+print(paste("Looks great"))
+
